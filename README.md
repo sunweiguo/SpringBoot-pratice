@@ -7,21 +7,20 @@ Spring的官网：https://spring.io/projects
 
 ![image](http://bloghello.oursnail.cn/shixi1-1.png)
 
-- [x] 在网页上显示最简单的`Hello SpringBoot!`前置准备包括
-    - [x]  `IDEA`的下载和基本使用（墙裂推荐学习如何使用）
-    - [x]  `JDK8`及以上版本的安装
-    - [x]  `Maven`了解、安装和构建项目
-    - [x]  `Mysql`数据库的安装、了解基本的增删改查操作
-    - [x]  `Navicate`数据库可视化软件的使用
-    - [x]  了解web开发中的三层架构模式（控制层、逻辑层、持久层）
+- [ ] 在网页上显示最简单的`Hello SpringBoot!`前置准备包括
+    - [ ]  `IDEA`的下载和基本使用（墙裂推荐学习如何使用）
+    - [ ]  `JDK8`及以上版本的安装
+    - [ ]  `Maven`了解、安装和构建项目
+    - [ ]  `Mysql`数据库的安装、了解基本的增删改查操作
+    - [ ]  `Navicate`数据库可视化软件的使用
+    - [ ]  了解web开发中的三层架构模式（控制层、逻辑层、持久层）
 
-- [x]  后置就是`SpringBoot`下载启动，如何引入`SpringMVC`的。了解项目的基本结构，每一层目录的作用，以及后续代码如何分层等。
-- [x]  学习`SpringMVC`的参数绑定，即url中传递来的参数是如何接受的
-- [x]  要对`spring`以及`springmvc`的常用注解要熟悉，包括他们的作用、用法等
-- [x]  提醒：要了解`springboot`，最好了解一下`spring`，特别是其核心的`IOC`和`AOP`，因为前者基于后者。
+- [ ]  后置就是`SpringBoot`下载启动，如何引入`SpringMVC`的。了解项目的基本结构，每一层目录的作用，以及后续代码如何分层等。
+- [ ]  学习`SpringMVC`的参数绑定，即url中传递来的参数是如何接受的
+- [ ]  要对`spring`以及`springmvc`的常用注解要熟悉，包括他们的作用、用法等
+- [ ]  提醒：要了解`springboot`，最好了解一下`spring`，特别是其核心的`IOC`和`AOP`，因为前者基于后者。
 
-- demo01：完成聚合工程的创建、在页面如何显示最简单的hello world、简单演示restful接口如何接受参数，详见`TestController`、通过查看配置文件，可以看到如何配置端口、如何配置项目前缀、如何配置datasource（还没用到）、
-如何在配置文件中指定生效的配置文件等...
+- demo01：完成聚合工程的创建（可参考我的[博客](https://sunweiguo.github.io/2019/04/17/mama-action/01-%E8%81%9A%E5%90%88%E5%B7%A5%E7%A8%8B%E5%88%9B%E5%BB%BA%E5%92%8C%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83/)）、在页面如何显示最简单的hello world、简单演示restful接口如何接受参数，详见`TestController`、通过查看配置文件，可以看到如何配置端口(server.port)、如何配置项目前缀(server.servlet.context-path: /demo01)、如何配置datasource（还没用到）、如何在配置文件中指定生效的配置文件等...最终要看到hello world的显示，先启动主类，然后访问：http://localhost:8888/demo01/test/index 即可
 - demo02:完成对mysql数据库的增删改查、controller-service-dao三层包各自应该写的代码、对事务生效的测试、引入lombok
 
 ### 二、持久层框架学习
