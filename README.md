@@ -20,7 +20,7 @@ Spring的官网：https://spring.io/projects
 - [ ]  要对`spring`以及`springmvc`的常用注解要熟悉，包括他们的作用、用法等
 - [ ]  提醒：要了解`springboot`，最好了解一下`spring`，特别是其核心的`IOC`和`AOP`，因为前者基于后者。
 
-- demo01：完成聚合工程的创建（可参考我的[博客](https://sunweiguo.github.io/2019/04/17/mama-action/01-%E8%81%9A%E5%90%88%E5%B7%A5%E7%A8%8B%E5%88%9B%E5%BB%BA%E5%92%8C%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83/)）、在页面如何显示最简单的hello world、简单演示restful接口如何接受参数，详见`TestController`、通过查看配置文件，可以看到如何配置端口(server.port)、如何配置项目前缀(server.servlet.context-path: /demo01)、如何配置datasource（还没用到）、如何在配置文件中指定生效的配置文件等...最终要看到hello world的显示，先启动主类，然后访问：http://localhost:8888/demo01/test/index 即可
+- demo01：完成聚合工程的创建（可参考我的[博客](https://sunweiguo.github.io/2019/04/17/mama-action/01-%E8%81%9A%E5%90%88%E5%B7%A5%E7%A8%8B%E5%88%9B%E5%BB%BA%E5%92%8C%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83/)）、在页面如何显示最简单的hello world、简单演示restful接口如何接受参数，详见`TestController`、通过查看配置文件，可以看到如何配置端口(server.port)、如何配置项目前缀(server.servlet.context-path: /demo01)、如何配置datasource（还没用到）、如何在配置文件中指定生效的配置文件,引入logbakc的配置文件，不懂如何配可以看我[博客](https://sunweiguo.github.io/2019/01/28/miscellany/11SpringBoot%E4%BD%BF%E7%94%A8logback%E5%AE%9E%E7%8E%B0%E6%97%A5%E5%BF%97%E6%8C%89%E5%A4%A9%E6%BB%9A%E5%8A%A8/)...最终要看到hello world的显示，先启动主类，然后访问：http://localhost:8888/demo01/test/index 即可
 - demo02:完成对mysql数据库的增删改查、controller-service-dao三层包各自应该写的代码、对事务生效的测试、引入lombok
 
 ### 二、持久层框架学习
