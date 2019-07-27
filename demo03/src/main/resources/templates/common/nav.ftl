@@ -6,13 +6,13 @@
             </a>
         </li>
         <li>
-            <a href="/sell/seller/order/list"><i class="fa fa-fw fa-list-alt"> 首页</i> </a>
+            <a href="/demo03/sendMsgManager/index"><i class="fa fa-fw fa-list-alt"> 首页</i> </a>
         </li>
         <li>
-            <a href="/demo03/sendMsgList/sendMsgPage"><i class="fa fa-fw fa-list-alt"> 发送消息</i> </a>
+            <a href="/demo03/sendMsgManager/sendMsgPage"><i class="fa fa-fw fa-list-alt"> 发送消息</i> </a>
         </li>
         <li>
-            <a href="/demo03/sendMsgList/list"><i class="fa fa-fw fa-list-alt"> 消息列表</i> </a>
+            <a href="/demo03/sendMsgManager/list"><i class="fa fa-fw fa-list-alt"> 发送工单列表</i> </a>
         </li>
     </ul>
 </nav>

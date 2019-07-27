@@ -9,23 +9,23 @@
         <div class="container-fluid">
             <div class="row clearfix">
                 <div class="col-md-12 column">
-                    <form class="form-horizontal" role="form">
+                    <form class="form-horizontal" role="form" action="/demo03/sendMsgManager/doSendMsg">
                         <div class="form-group">
-                            <label for="firstname" class="col-sm-2 control-label">kafka的地址</label>
+                            <label for="firstname" class="col-sm-2 control-label"><font color="red"><b>*</b></font>kafka的地址</label>
                             <div class="col-sm-8">
                                 <input type="text" class="form-control" id="address"
                                        placeholder="请输入kafka的地址">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="lastname" class="col-sm-2 control-label">kafka的端口</label>
+                            <label for="lastname" class="col-sm-2 control-label"><font color="red"><b>*</b></font>kafka的端口</label>
                             <div class="col-sm-8">
                                 <input type="text" class="form-control" id="port"
                                        placeholder="请输入kafka的端口">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="lastname" class="col-sm-2 control-label">发送的工单</label>
+                            <label for="lastname" class="col-sm-2 control-label"><font color="red"><b>*</b></font>发送的工单</label>
                             <div class="col-sm-8">
                                 <textarea type="text" class="form-control" id="sendmsg" rows="10" placeholder="请输入发送的工单"></textarea>
                             </div>
@@ -43,7 +43,7 @@
                         <div class="form-group">
                             <label for="lastname" class="col-sm-2 control-label">接收的工单</label>
                             <div class="col-sm-8">
-                                <textarea type="text" class="form-control" id="receivemsg" rows="10"></textarea>
+                                <textarea type="text" class="form-control" id="receivemsg" rows="10" placeholder="回执工单"></textarea>
                             </div>
                         </div>
                     </div>
