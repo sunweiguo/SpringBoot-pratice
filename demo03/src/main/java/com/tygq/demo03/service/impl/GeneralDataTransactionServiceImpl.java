@@ -3,6 +3,8 @@ package com.tygq.demo03.service.impl;
 import com.tygq.demo03.dao.GeneralDataTransactionDao;
 import com.tygq.demo03.entity.GeneralDataTransaction;
 import com.tygq.demo03.service.IGeneralDataTransactionService;
+import com.tygq.demo03.vo.MessageVO;
+import com.tygq.demo03.vo.ResultVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -19,5 +21,11 @@ public class GeneralDataTransactionServiceImpl implements IGeneralDataTransactio
     @Override
     public Page<GeneralDataTransaction> findAll(PageRequest request) {
         return generalDataTransactionDao.findAll(request);
+    }
+
+    @Override
+    public ResultVO sendMessage(MessageVO messageVO) {
+
+        return null;
     }
 }

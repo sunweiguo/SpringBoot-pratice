@@ -1,16 +1,21 @@
 package com.tygq.demo03.controller;
 
+import com.tygq.demo03.constants.Constant;
 import com.tygq.demo03.entity.GeneralDataTransaction;
 import com.tygq.demo03.service.IGeneralDataTransactionService;
+import com.tygq.demo03.utils.ResultVOUtil;
+import com.tygq.demo03.vo.MessageVO;
+import com.tygq.demo03.vo.ResultVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.validation.Valid;
 import java.util.Map;
 
 @Controller
@@ -19,15 +24,6 @@ public class GeneralDataTransactionController {
 
     @Autowired
     private IGeneralDataTransactionService generalDataTransactionService;
-
-    /**
-     * index首页
-     * @return
-     */
-    @GetMapping("index")
-    public ModelAndView index(){
-        return new ModelAndView("kafkaManager/index");
-    }
 
     /**
      * 已发送的工单列表
@@ -58,6 +54,21 @@ public class GeneralDataTransactionController {
     }
 
 
+    /**
+     * 发送工单
+     */
+    @PostMapping("doSendMsg")
+    @ResponseBody
+    public ResultVO doSendMsg(@Valid MessageVO messageVO, BindingResult bindingResult){
+        System.out.println(messageVO);
+        //对用户输入的参数进行校验，这里简单校验是否为空
+        if(bindingResult.hasErrors()){
+            for(ObjectError error : bindingResult.getAllErrors()){
+                return ResultVOUtil.error(Constant.ERROR,error.getDefaultMessage());
+            }
+        }
+        return generalDataTransactionService.sendMessage(messageVO);
+    }
 
 
 }
