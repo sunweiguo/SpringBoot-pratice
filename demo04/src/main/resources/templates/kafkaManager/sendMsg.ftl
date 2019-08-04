@@ -30,8 +30,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                                <button type="button" id="send" class="btn btn-success">发送消息</button>&nbsp;&nbsp;
-                                <button type="button" id="check" class="btn btn-success">查看回执消息</button>
+                                <button type="button" id="send" class="btn btn-success">发送消息</button>
                             </div>
                         </div>
                     </form>

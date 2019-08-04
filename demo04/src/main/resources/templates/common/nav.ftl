@@ -15,7 +15,7 @@
             <a href="/demo04/sendMsgManager/list"><i class="fa fa-fw fa-list-alt"> 已发送工单列表</i> </a>
         </li>
         <li>
-            <a href="/demo04/sendMsgManager/list"><i class="fa fa-fw fa-list-alt"> 回执工单列表</i> </a>
+            <a href="/demo04/receiveMsgManager/list"><i class="fa fa-fw fa-list-alt"> 回执工单列表</i> </a>
         </li>
     </ul>
 </nav>

@@ -24,6 +24,8 @@ public class KafkaSender {
 
     //发送消息方法
     public void send(MessageVO messageVO) throws JsonProcessingException {
+        log.info("开始发送...");
+        log.info("发送的数据为：{}",messageVO.getSendmsg());
         kafkaTemplate.send(producerGroupId, messageVO.getSendmsg());
     }
 }
